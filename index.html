@@ -66,7 +66,7 @@
          <!--секція заголовок-->
          <section class="hero">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="button primary">Заказать услугу</button>
+            <button type="button" class="button primary" data-modal-open>Заказать услугу</button>
          </section>
          <!--секція особливості-->
          <section class="specifics">
@@ -129,31 +129,40 @@
                <h2 class="section-title">Чем мы занимаемся</h2>
                <ul class="section-list list">
                   <li class="item">
-                     <img
-                        src="./images/main/doing/doing-img1.jpg"
-                        alt="написание программ"
-                        class="doing-img"
-                        width="370"
-                        height="294"
-                     />
+                     <div class="work-img">
+                        <img
+                           src="./images/main/doing/doing-img1.jpg"
+                           alt="написание программ"
+                           class="doing-img"
+                           width="370"
+                           height="294"
+                        />
+                        <p>Десктопные приложения</p>
+                     </div>
                   </li>
                   <li class="item">
-                     <img
-                        src="./images/main/doing/doing-img2.jpg"
-                        alt="создание сайта"
-                        class="doing-img"
-                        width="370"
-                        height="294"
-                     />
+                     <div class="work-img">
+                        <img
+                           src="./images/main/doing/doing-img2.jpg"
+                           alt="создание сайта"
+                           class="doing-img"
+                           width="370"
+                           height="294"
+                        />
+                        <p>Мобильные приложения</p>
+                     </div>
                   </li>
                   <li class="item">
-                     <img
-                        src="./images/main/doing/doing-img3.jpg"
-                        alt="создание веб-дизайна"
-                        class="doing-img"
-                        width="370"
-                        height="294"
-                     />
+                     <div class="work-img">
+                        <img
+                           src="./images/main/doing/doing-img3.jpg"
+                           alt="создание веб-дизайна"
+                           class="doing-img"
+                           width="370"
+                           height="294"
+                        />
+                        <p>Дизайнерские решения</p>
+                     </div>
                   </li>
                </ul>
             </div>
@@ -458,5 +467,13 @@
             </div>
          </div>
       </footer>
+      <div class="backdrop is-hidden" data-modal>
+         <div class="modal">
+            <button class="modal-button" type="button" data-modal-close>
+               <img src="./images/Vector-2-2.svg" alt="Close" width="11" />
+            </button>
+         </div>
+      </div>
+      <script src="./js/modal.js"></script>
    </body>
 </html>
