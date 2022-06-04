@@ -518,6 +518,7 @@ fill: var(--white-color);
     border: 1px solid var(--passive-icon-color);
     border-radius: 4px;
     cursor: pointer;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-clients-list-item:not(:last-child) {
     margin-right: 30px;
@@ -525,6 +526,7 @@ fill: var(--white-color);
 
 .our-clients-icon {
     fill: var(--passive-icon-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-clients-list-item-link:hover,
@@ -581,6 +583,7 @@ font-weight: 400;
     font-size: 14px;
     line-height: 1.46;
     letter-spacing: 0.03em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
     
 .footer-item {
@@ -623,7 +626,8 @@ color: var(--white-color);
         align-items: center;
             justify-content: center;
             background-color: rgba(255, 255, 255, 0.1);
-}
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
 .media-link:hover,
 .media-link:focus {
     background-color: var(--accent-color);
@@ -776,7 +780,7 @@ display: block;
     color: var(--white-color);
     padding: 63px 24px;
     background-color: rgba(33, 150, 243, 0.9);
-    transform: translatey(100%);
+    transform: translatey(101%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -799,7 +803,7 @@ display: block;
 
 .backdrop.is-hidden {
     opacity: 0;
-    visibility: hidden;
+   
     pointer-events: none;
 }
 
